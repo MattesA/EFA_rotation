@@ -5,8 +5,6 @@ library(tidyverse)
 library(psych)
 source("EFA_functions.R")
 
-# setwd(dir = "C:\Users\andre\sciebo\DPPD_Abteilung\Lehre\Testtheorie\22_23 WS\Präsentationen\André\Exploratorische Faktorenanalyse")
-
 
 data <- bfi %>% 
   mutate_at(vars(A1, C4, C5, E1, E2, O2, O5), list(~ 7 - .)) %>% 
